@@ -1,12 +1,32 @@
-*
+.container .row 
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    
 }
 
-table th
+.ind
 {
-    text-align: left;
+    border-bottom: 1px solid #010101;
+}
+
+.ind ul li
+{
+    font-weight: 800;
+}
+
+.container .row ul
+{
+    display: flex;
+}
+
+.container .row ul li 
+{    
+    width: 16%;
+    padding: 8px;
+    list-style: none;
+}
+
+.container .row ul li a
+{
+    align-items: spa;
+    margin: 4px;
 }

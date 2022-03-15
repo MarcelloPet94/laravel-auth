@@ -8,24 +8,34 @@
     <title>Articoli</title>
 </head>
 <body>
-    @dump($posts)
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>title</th>
-            <th>Content</th>
-            <th>Published state</th>
-            <th>Slug</th>
-        </tr>    
-        @foreach ($posts as $post)
-        <tr>    
-            <td>{{$post->id}}</td>
-            <td>{{$post->title}}</td>
-            <td>{{$post->content}}</td>
-            <td>{{$post->published}}</td>
-            <td>{{$post->slug}}</td>   
-        </tr>
-        @endforeach
-    </table>    
+
+<div class="container">
+    <div class="row ind">
+        <ul>
+            <li>ID</li>
+            <li>Title</li>
+            <li>Contenuto</li>
+            <li>Stato</li>
+            <li>Slug</li>
+            <li>Operation</li>
+        </ul>
+    </div>
+    @foreach ($posts as $post)
+        <div class="row">
+            <ul>
+                <li>{{$post->id}}</li>
+                <li>{{$post->title}}</li>
+                <li>{{$post->content}}</li>
+                <li>{{$post->published}}</li>
+                <li>{{$post->slug}}</li>
+                <li>
+                    <a href="#">Open</a>
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </li>
+            </ul>    
+        </div> 
+    @endforeach    
+</div>       
 </body>
 </html>
