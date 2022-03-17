@@ -23,7 +23,7 @@
                     <li>{{$post->slug}}</li>
                     <li>
                         <a href="{{ route('admin.posts.show', $post->id) }}">Open</a>
-                        <a href="#">Edit</a>
+                        <a href="{{ route('admin.posts.edit', $post->id) }}">Edit</a>
                         <a href="#">Delete</a>
                     </li>
                 </ul>    

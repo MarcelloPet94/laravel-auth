@@ -10988,6 +10988,10 @@ a.text-dark:focus {
   border: none;
 }
 
+.save_edit_btn {
+  background-color: #01ce2d;
+}
+
 .goback {
   color: #fff;
   background-color: blue;
