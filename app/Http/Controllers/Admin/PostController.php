@@ -99,13 +99,9 @@ class PostController extends Controller
         ]);
 
         $data = $request->all();
-        $data['slug']=$this->slug($data["title"]);
-
-        $post = new Post();
-
-        $post->fill($data);
-        $post->save();
-        return redirect()->route('admin.posts.show', $post->id);
+        $data["slug"] = ($post->title == $data['title']) ? $post->slug : $this->slug($data["title"], $post->id);
+        $post->update($data);
+        return redirect()->route('admin.posts.index');
     }
 
     /**
