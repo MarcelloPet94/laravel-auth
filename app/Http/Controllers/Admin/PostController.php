@@ -9,6 +9,15 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 { 
+    function slug($title = "", $id = ""){
+        $slugtitle = Str::slug($title);
+        $count = 1;
+        while(Post::where('slug', $slugtitle)->where('id', '!=', $id)->first()){
+            $slugtitle = Str::slug($title)."-".$count;
+            $count ++;
+        }
+        return $slugtitle;
+    }    
     /**
      * Display a listing of the resource.
      *
@@ -44,6 +53,7 @@ class PostController extends Controller
         ]);
 
         $data = $request->all();
+        $data['slug']=$this->slug($data["title"]);
 
         $newPost = new Post();
 

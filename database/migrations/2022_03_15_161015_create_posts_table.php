@@ -17,7 +17,6 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('content');
-            $table->boolean('published')->default(false);
             $table->string('slug')->unique; // sostituisce gli spazi con i: ' - '            
             $table->timestamps();
         });

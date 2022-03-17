@@ -20,7 +20,6 @@ class PostsTableSeeder extends Seeder
             $post->title = $faker->words(7,true); // recupera sette parole come stringa
             $post->content = $faker->text();
             $post->slug = Str::of($post->title)->slug("-"); // la classe lavora sulle stringhe, sostituisce gli spazi con i '-'
-            $post->published = rand(0,1); // ritorna true / false
 
             $post->save();
         }
