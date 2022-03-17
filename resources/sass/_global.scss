@@ -1,10 +1,27 @@
-.container .row 
+.align_controller
 {
-    
+    display: flex;
 }
+
+.admin_controller
+{
+    padding-left: 24px;
+}
+
+.admin_controller a
+{
+    display: block;
+    margin: 16px 0 16px;
+    line-height: 2em;
+    border-bottom: 1px solid lightblue;
+
+}
+
+/*  */
 
 .ind
 {
+    border-top: 1px solid #010101;
     border-bottom: 1px solid #010101;
 }
 
@@ -13,19 +30,19 @@
     font-weight: 800;
 }
 
-.container .row ul
+.container .riga ul
 {
     display: flex;
 }
 
-.container .row ul li 
+.container .riga ul li 
 {    
     width: 16%;
     padding: 8px;
     list-style: none;
 }
 
-.container .row ul li a
+.container .riga ul li a
 {
     align-items: spa;
     margin: 4px;
