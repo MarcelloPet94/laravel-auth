@@ -20,8 +20,7 @@
                     <li>{{$post->content}}</li>
                     <li>{{$post->slug}}</li>
                     <li>
-                        <a href="#">Edit</a>
-                        <a href="#">Delete</a>
+                        <a  href="{{ route('admin.posts.edit', $post->id) }}">Edit</a>
                     </li>
                 </ul>    
             </div> 

@@ -10972,6 +10972,7 @@ a.text-dark:focus {
 .space_btn_area {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 32px 0;
 }
 
@@ -10984,12 +10985,15 @@ a.text-dark:focus {
   border-radius: 15px;
   padding: 16px 24px;
   color: #fff;
-  background-color: blue;
-  border: none;
+  border: 1px solid #fff;
 }
 
 .save_edit_btn {
   background-color: #01ce2d;
+}
+
+.delete_btn {
+  background-color: #d60000;
 }
 
 .goback {
@@ -11028,13 +11032,8 @@ a.text-dark:focus {
 }
 
 .container .riga ul li {
-  width: 16%;
+  width: 20%;
   padding: 8px;
   list-style: none;
-}
-
-.container .riga ul li a {
-  align-items: spa;
-  margin: 4px;
 }
 

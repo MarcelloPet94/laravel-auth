@@ -13,7 +13,8 @@
                     placeholder="Descrizione del prodotto"></textarea>
             </div>
             <div class="space_btn_area">
-                <button type="submit" class="btn_funct">Crea</button>
+                 <a href="{{ route('admin.posts.index')}}" class="btnStyl goback">Go back</a>
+                <button type="submit" class="btn_funct save_edit_btn">Edit</button>
             </div>  
         </form>
 

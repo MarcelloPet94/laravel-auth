@@ -2,6 +2,7 @@
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 32px 0;
 }
 
@@ -16,13 +17,17 @@
     border-radius: 15px;    
     padding: 16px 24px;
     color: #fff;
-    background-color: blue;
-    border: none;
+    border: 1px solid #fff;
 }
 
 .save_edit_btn
 {
     background-color:rgb(1, 206, 45);
+}
+
+.delete_btn
+{
+    background-color:rgb(214, 0, 0);
 }
 
 .goback
@@ -70,13 +75,7 @@
 
 .container .riga ul li 
 {    
-    width: 16%;
+    width: 20%;
     padding: 8px;
     list-style: none;
-}
-
-.container .riga ul li a
-{
-    align-items: spa;
-    margin: 4px;
 }

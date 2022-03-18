@@ -19,8 +19,8 @@
                 placeholder="Descrizione del prodotto">{{ old('content') ?? $post->content }}</textarea>
             </div>
             <div class="space_btn_area">
-                <a href="{{ route('admin.posts.index')}}" class="btnStyl goback">Torna indietro</a>                
-                <button type="submit" class="btn_funct save_edit_btn">Modifica</button>
+                <a href="{{ route('admin.posts.index')}}" class="btnStyl goback">Go back</a>                
+                <button type="submit" class="btn_funct save_edit_btn">Edit</button>
             </div>  
         </form>
 
